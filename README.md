@@ -9,9 +9,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 > git push --set-upstream origin master
 
 git init
+
 git add .
+
 git commit -m "`커밋할 내용`"
+
 git remote add origin `Git repository 주소`
+
 git push -u origin master
 
 In the project directory, you can run:
