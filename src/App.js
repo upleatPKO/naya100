@@ -19,7 +19,7 @@ function App() {
   const 리스트정렬 = () => {
     let _글제목 = [...글제목];
     글제목변경(_글제목.sort());
-  }
+  } 
 
 
   return (
