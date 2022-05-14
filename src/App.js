@@ -50,7 +50,7 @@ function App() {
                 {따봉[i]}
               </h4>
               <p>2월 17일 발행</p>
-              <button onClick={() => { 
+              <button onClick={() => {
                 let _글제목 = [...글제목];
                 _글제목.splice(i, 1);
                 글제목변경(_글제목);
