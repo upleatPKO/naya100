@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Container, Row } from 'react-bootstrap';
 import ShoseCard from '../components/ShoseCard';
 
@@ -11,7 +10,7 @@ function MainPage({shoes}) {
           {
             shoes.map((e, i) => {
               return (
-                <ShoseCard shoes={ shoes } i={ i } />
+                <ShoseCard key={ i } shoes={ shoes } i={ i } />
               )
             })
           }
