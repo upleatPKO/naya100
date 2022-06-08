@@ -1,15 +1,16 @@
 import { useState } from 'react';
 import './App.css';
 import { Navbar, Container, Nav } from 'react-bootstrap';
-import { Routes, Route, Link, useNavigate, Outlet } from 'react-router-dom';
+import { Routes, Route, useNavigate } from 'react-router-dom';
 import MainPage from './pages/MainPage';
 import DetailPage from './pages/DetailPage';
 import AboutPage from './pages/AboutPage';
 import EventPage from './pages/EventPage';
 import data from './data.js';
+import Cart from './pages/Cart';
 
 function App() {
-	const [shoes, setShoes] = useState(data);
+	let [shoes, setShoes] = useState(data);
   const navigate = useNavigate();
 
   return (
@@ -39,6 +40,7 @@ function App() {
           <Route path="two" element={ <div>생일기념 쿠폰받기</div> } />
         </Route>
         <Route path="*" element={ <div>없는 페이지임</div>}></Route>
+        <Route path="/cart" element={ <Cart /> } />
       </Routes>
 
     </div>

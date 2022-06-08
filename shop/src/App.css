@@ -1,3 +1,8 @@
+
+body {
+  text-align:center;
+}
+
 a,
 a:hover {
   color:#222;
@@ -26,6 +31,16 @@ a:hover {
   background-size: cover;
   background-position: top center;
 }
-.container {
-  text-align:center;
+
+.start {
+  display: inline-block;
+  padding:20px 40px;
+  background:yellow;
+  transform: scale(0);
+  opacity : 0
+}
+.end {
+  transform: scale(1);
+  opacity : 1;
+  transition : all 0.5s;
 }
