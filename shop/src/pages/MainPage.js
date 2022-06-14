@@ -1,8 +1,7 @@
 import { useState } from 'react';
-import { Container, Row } from 'react-bootstrap';
+import { Container, Row, Nav } from 'react-bootstrap';
 import ShoseCard from '../components/ShoseCard';
 import axios from 'axios';
-import { Nav } from 'react-bootstrap';
 import TabContent from '../components/TabContent';
 
 function MainPage(props) {
